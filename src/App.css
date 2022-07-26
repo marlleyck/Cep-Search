@@ -31,19 +31,41 @@
     font-size: 50px;
 }
 
-.main input {
+.fieldset {
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-bottom: 20%;
+}
+
+
+.fieldset input {
     border: none;
     outline: none;
     padding: 10px;
     background-color: #EDEDED;
-    margin-bottom: 30%;
+    font-size: 20px;
+    margin: 0 5px;
+    border-radius: 8px;
 }
 
-.main .details {
+.fieldset button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.details {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
+    background-color: rgb(51, 51, 51);
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
     gap: 15px;
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.2);
 }

@@ -18,16 +18,6 @@ function App() {
       return
     }
 
-    /* try {
-      const {data} = await axios.get(`${url}/${input}/json`)
-      setInput('')
-      setCep(data)
-    }
-    catch {
-      alert('Ops! Não foi possível buscar o cep!')
-      setInput('')
-    } */
-
     const {data} = axios.get(`${url}/${input}/json`)
     .then(({data}) => {
       setInput('')
@@ -39,9 +29,6 @@ function App() {
         setInput('')
       }
     })
-
-
-
   }
 
   return (

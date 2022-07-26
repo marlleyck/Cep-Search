@@ -18,7 +18,7 @@ function App() {
       return
     }
 
-    const {data} = axios.get(`${url}/${input}/json`)
+    axios.get(`${url}/${input}/json`)
     .then(({data}) => {
       setInput('')
       setCep(data)
